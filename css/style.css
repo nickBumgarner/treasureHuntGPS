@@ -1,9 +1,28 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
   background-color: #ff2081;
-  color: white; }
+  color: white;
+  font: 800 40px/28px 'Open Sans', sans-serif; }
   body.blue {
-    background-color: #2b90ff; }
+    backgroundgit t-color: #2b90ff; }
   body.black {
     background-color: black; }
+  body .text-area {
+    position: absolute;
+    width: 80%;
+    top: 20%;
+    left: 10%; }
+  body .grippie {
+    position: absolute;
+    bottom: 1rem;
+    left: 43%; }
+    body .grippie span {
+      display: block;
+      background-color: rgba(255, 255, 255, 0.2);
+      border-radius: 999px;
+      margin: 1rem auto;
+      position: relative;
+      width: 150px;
+      height: 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -21,29 +21,33 @@ $(document).ready(function () {
     }
 
     window.navigator.geolocation.getCurrentPosition(function (pos) {
-      console.log(pos);
-      console.log(
-          distance(pos.coords.longitude, pos.coords.latitude, -75.496371, 39.031725)
-      );
+
+      $('.distance strong').text(distance(pos.coords.longitude, pos.coords.latitude, -75.496371, 39.031725));
 
 
       var distanceAway = distance(pos.coords.longitude, pos.coords.latitude, -75.496371, 39.031725);
-      if (distanceAway <= .05) {
+      if (distanceAway <= .1) {
         $('body').removeClass('black');
         $('body').addClass('blue');
+        $('body h1').text("You're in the office");
       }
       else {
         $('body').addClass('black');
         $('body').removeClass('blue');
+        $('body h1').text("Not near the office");
+
       }
     });
 
   }
 
+
   whereAreWe();
 
-  window.setInterval(function(){
+  window.setInterval(function () {
     whereAreWe();
+
+
   }, 5000);
 
 });
