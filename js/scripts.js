@@ -24,17 +24,28 @@ $(document).ready(function () {
 
       $('.distance strong').text(distance(pos.coords.longitude, pos.coords.latitude, -75.496371, 39.031725));
 
+      var garageLon = -75.496347;
+      var garageLat = 39.031637;
 
-      var distanceAway = distance(pos.coords.longitude, pos.coords.latitude, -75.496371, 39.031725);
-      if (distanceAway <= .1) {
+      var livingLon = -75.496445;
+      var livingLat = 39.031760;
+
+      var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
+      var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
+      if (distanceAwayGarage <= 5) {
         $('body').removeClass('black');
         $('body').addClass('blue');
-        $('body h1').text("You're in the office");
+        $('body h1').text("Near garage");
       }
-      else {
+      else if(distanceAwayliving <= 5) {
         $('body').addClass('black');
         $('body').removeClass('blue');
-        $('body h1').text("Not near the office");
+        $('body h1').text("Near living room");
+
+      }
+      else {
+        $('body').removeClass('black', 'blue');
+        $('body h1').text("Not near anything");
 
       }
     });
@@ -48,7 +59,7 @@ $(document).ready(function () {
     whereAreWe();
 
 
-  }, 5000);
+  }, 500);
 
 });
 
