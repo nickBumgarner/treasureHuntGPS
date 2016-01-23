@@ -1,0 +1,9 @@
+body {
+  background-color: #ff2081;
+  color: white; }
+  body.blue {
+    background-color: #2b90ff; }
+  body.black {
+    background-color: black; }
+
+/*# sourceMappingURL=style.css.map */

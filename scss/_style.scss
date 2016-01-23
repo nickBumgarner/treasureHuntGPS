@@ -1,0 +1,14 @@
+body {
+  background-color: #ff2081;
+  color:white;
+
+
+  &.blue {
+    background-color: #2b90ff;
+  }
+
+  &.black {
+    background-color:black;
+  }
+}
+
