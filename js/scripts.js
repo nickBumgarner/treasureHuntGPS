@@ -37,7 +37,7 @@ $(document).ready(function () {
         $('body').addClass('blue');
         $('body h1').text("Near garage");
       }
-      else if(distanceAwayliving <= .05) {
+      else if (distanceAwayLiving <= .05) {
         $('body').addClass('black');
         $('body').removeClass('blue');
         $('body h1').text("Near living room");
