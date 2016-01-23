@@ -32,12 +32,12 @@ $(document).ready(function () {
 
       var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
       var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
-      if (distanceAwayGarage <= 5) {
+      if (distanceAwayGarage <= .05) {
         $('body').removeClass('black');
         $('body').addClass('blue');
         $('body h1').text("Near garage");
       }
-      else if(distanceAwayliving <= 5) {
+      else if(distanceAwayliving <= .05) {
         $('body').addClass('black');
         $('body').removeClass('blue');
         $('body h1').text("Near living room");
