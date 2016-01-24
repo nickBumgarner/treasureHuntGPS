@@ -3,8 +3,8 @@
 body {
   background-color: #ff2081;
   color: white;
-  font: 800 40px/28px 'Open Sans', sans-serif;
-
+  font: 800 40px/48px 'Open Sans', sans-serif;
+  transition:(background-color, .8s);
   &.blue {
     background-color: #2b90ff;
   }

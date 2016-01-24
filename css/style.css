@@ -3,15 +3,19 @@
 body {
   background-color: #ff2081;
   color: white;
-  font: 800 40px/28px 'Open Sans', sans-serif;
+  font: 800 40px/48px 'Open Sans', sans-serif;
 }
 
 body.blue {
   background-color: #2b90ff;
+  transition: background-color, 0.8s;
+
 }
 
 body.black {
   background-color: black;
+  transition: background-color, 0.8s;
+
 }
 
 body .text-area {

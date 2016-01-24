@@ -22,7 +22,7 @@ $(document).ready(function () {
 
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
-      $('.distance strong').text(distance(pos.coords.longitude, pos.coords.latitude, -75.496371, 39.031725));
+
 
       var garageLon = -75.496347;
       var garageLat = 39.031637;
@@ -32,22 +32,21 @@ $(document).ready(function () {
 
       var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
       var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
-      if (distanceAwayGarage <= .01) {
+
+      $('.distanceGarage strong').text(distanceAwayGarage);
+      $('.distanceLiving strong').text(distanceAwayLiving);
+      if (distanceAwayGarage < distanceAwayLiving) {
         $('body').removeClass('black');
         $('body').addClass('blue');
         $('body h1').text("Near garage");
       }
-      else if (distanceAwayLiving <= .01) {
+      else  {
         $('body').addClass('black');
         $('body').removeClass('blue');
         $('body h1').text("Near living room");
 
       }
-      else {
-        $('body').removeClass('black', 'blue');
-        $('body h1').text("Not near anything");
 
-      }
     });
 
   }
