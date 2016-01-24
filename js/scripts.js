@@ -24,11 +24,12 @@ $(document).ready(function () {
 
 
 
-      var garageLon = -75.496347;
-      var garageLat = 39.031637;
 
-      var livingLon = -75.496445;
-      var livingLat = 39.031760;
+      var garageLon =-75.496274;
+      var garageLat = 39.031519;
+
+      var livingLon = -75.496578;
+      var livingLat = 39.031937;
 
       var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
       var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
