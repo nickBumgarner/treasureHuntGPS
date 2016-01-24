@@ -34,7 +34,7 @@ $(document).ready(function () {
 
       $('.distanceGarage strong').text(distanceAwayGarage);
       $('.distanceLiving strong').text(distanceAwayLiving);
-      if (distanceAwayGarage > .03) {
+      if (distanceAwayGarage < .05) {
         $('.slide-2').addClass('show');
       }
       else {
