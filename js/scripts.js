@@ -23,9 +23,7 @@ $(document).ready(function () {
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
 
-
-
-      var garageLon =-75.496274;
+      var garageLon = -75.496274;
       var garageLat = 39.031519;
 
       var livingLon = -75.496578;
@@ -36,15 +34,12 @@ $(document).ready(function () {
 
       $('.distanceGarage strong').text(distanceAwayGarage);
       $('.distanceLiving strong').text(distanceAwayLiving);
-      if (distanceAwayGarage < distanceAwayLiving) {
-        $('body').removeClass('black');
-        $('body').addClass('blue');
-        $('body h1').text("Near garage");
+      if (distanceAwayGarage > .03) {
+        $('.slide-2').addClass('show');
       }
-      else  {
-        $('body').addClass('black');
-        $('body').removeClass('blue');
-        $('body h1').text("Near living room");
+      else {
+        $('body').addClass('blue');
+        $('body h1').text("You're not close enough to the garage yet");
 
       }
 
@@ -52,15 +47,10 @@ $(document).ready(function () {
 
   }
 
-
-  whereAreWe();
-
-  window.setInterval(function () {
+  $('.check-button').click(function () {
     whereAreWe();
 
-
-  }, 500);
-
+  });
 });
 
 // 39.031725, lng:  -75.496371
