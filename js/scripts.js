@@ -32,8 +32,6 @@ $(document).ready(function () {
 
       var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
       var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
-
-
       if (distanceAwayGarage <= .01) {
         $('body').removeClass('black');
         $('body').addClass('blue');
