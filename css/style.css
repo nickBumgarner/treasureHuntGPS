@@ -6,7 +6,6 @@ body {
     font: 800 100px/100px 'Open Sans', sans-serif;
     text-transform: uppercase;
     color: #FFF;
-    letter-spacing: -10px;
     font-weight: bold;
     text-shadow: 0 10px 0 rgba(0, 0, 0, 0.2); }
   body a {
