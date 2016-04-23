@@ -23,8 +23,8 @@ $(document).ready(function () {
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
 
-      var garageLon = -75.496274;
-      var garageLat = 39.031519;
+      var garageLon = -75.406544;
+      var garageLat = 38.889716;
 
       var livingLon = -75.496578;
       var livingLat = 39.031937;
@@ -39,7 +39,7 @@ $(document).ready(function () {
       }
       else {
         $('body').addClass('blue');
-        $('body h1').text("You're not close enough to the garage yet");
+        $('body h1').text("You're not at Joshe's house");
 
       }
 
