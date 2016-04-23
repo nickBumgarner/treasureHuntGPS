@@ -1,7 +1,6 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
-  background-color: #00a3ff;
-  font: 800 100px/100px 'Open Sans', sans-serif; }
+  background-color: #00a3ff; }
   body h1 {
     font: 800 100px/100px 'Open Sans', sans-serif;
     text-transform: uppercase;
