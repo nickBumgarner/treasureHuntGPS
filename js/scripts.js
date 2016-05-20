@@ -36,31 +36,33 @@ $(document).ready(function () {
       var stop3Lon = -75.604419;
       var stop3Lat = 38.683842;
       var distanceStop3 = distance(pos.coords.longitude, pos.coords.latitude, stop3Lon, stop3Lat);
-      
+
       //Royal Farms
-      var stop4Lon = -75.604419;
-      var stop4Lat = 38.683842;
+      var stop4Lon = -75.583544;
+      var stop4Lat = 38.805206;
       var distanceStop4 = distance(pos.coords.longitude, pos.coords.latitude, stop4Lon, stop4Lat);
 
 
-      if (distanceStop1 < .5) {
+      if ((distanceStop1 < .5) && (!$('.slide-2').hasClass('show'))) {
         $('.slide-2').addClass('show');
       }
 
-      else if (distanceStop2 < .5) {
+      else if ((distanceStop2 < .5) && (!$('.slide-3').hasClass('show'))) {
+
         $('.slide-3').addClass('show');
       }
 
-      else if (distanceStop3 < .5) {
+      else if ((distanceStop3 < .5) && (!$('.slide-4').hasClass('show'))) {
+
         $('.slide-4').addClass('show');
       }
       else if (distanceStop4 < .5) {
         $('.slide-5').addClass('show');
       }
       else {
-        alert("You must not be there yet, keep trying!");
+        alert("You're not at the right place. Try again!");
       }
-console.log("Ran");
+      console.log("Ran");
 
     });
 
