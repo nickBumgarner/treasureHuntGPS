@@ -60,7 +60,7 @@ $(document).ready(function () {
         $('.slide-5').addClass('show');
       }
       else {
-        alert("You're not at the right place. Try again!");
+        alert("Try again, you're not there yet!");
       }
       console.log("Ran");
 
