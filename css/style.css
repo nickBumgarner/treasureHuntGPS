@@ -33,14 +33,18 @@ body {
     border-radius: 999px;
     display: block;
     position: absolute;
-    bottom: 15rem;
-    height: 339px;
-    left: 31.5%;
+    bottom: 11rem;
+    height: 280px;
+    left: 34%;
     line-height: 5rem;
     padding: 0 142px;
     border: solid 4px rgba(255, 255, 255, 0.4);
     color: rgba(255, 255, 255, 0.4);
-    font-size: 8rem; }
+    font-size: 10rem; }
+    body .check-button i {
+      position: absolute;
+      top: 23%;
+      left: 26.5%; }
     body .check-button:focus {
       background-color: rgba(255, 255, 255, 0.2); }
   body .slide-2 {

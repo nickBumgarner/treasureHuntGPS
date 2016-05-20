@@ -23,18 +23,37 @@ $(document).ready(function () {
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
 
-      var garageLon = -75.406544;
-      var garageLat = 38.889716;
+      var stop1Lon = -75.492184;
+      var stop1Lat = 39.029300;
+      var distanceStop1 = distance(pos.coords.longitude, pos.coords.latitude, stop1Lon, stop1Lat);
 
-      var livingLon = -75.496578;
-      var livingLat = 39.031937;
 
-      var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
-      var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
+      var stop2Lon = -75.406544;
+      var stop2Lat = 38.889716;
+      var distanceStop2 = distance(pos.coords.longitude, pos.coords.latitude, stop2Lon, stop2Lat);
 
-      if (distanceAwayGarage > .05) {
+
+      var stop3Lon = -75.406544;
+      var stop3Lat = 38.889716;
+      var distanceStop3 = distance(pos.coords.longitude, pos.coords.latitude, stop3Lon, stop3Lat);
+
+
+      if (distanceStop1 < .05) {
         $('.slide-2').addClass('show');
       }
+      else {
+        alert("You must not be there yet, keep trying!");
+      }
+     if (distanceStop2 > .05) {
+        $('.slide-3').addClass('show');
+      }
+
+     if (distanceStop3 > .05) {
+        $('.slide-4').addClass('show');
+      }
+
+
+
 
     });
 
