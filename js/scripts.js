@@ -34,13 +34,8 @@ $(document).ready(function () {
 
       $('.distanceGarage strong').text(distanceAwayGarage);
       $('.distanceLiving strong').text(distanceAwayLiving);
-      if (distanceAwayGarage < .05) {
+      if (distanceAwayGarage > .05) {
         $('.slide-2').addClass('show');
-      }
-      else {
-        $('body').addClass('blue');
-        $('body h1').text("You're not at Joshe's house");
-
       }
 
     });
