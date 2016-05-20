@@ -2,7 +2,9 @@
 
 body {
   background-color: #00a3ff;
-
+  color: white;
+  font-size:48px;
+  font-family:'Open Sans';
   h1 {
     font: 800 100px/100px 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -26,7 +28,7 @@ body {
   .text-area {
     position: absolute;
     width: 80%;
-    top: 20%;
+    top: 0%;
     left: 10%;
   }
 
@@ -51,8 +53,9 @@ body {
     display: block;
     position: absolute;
     bottom: 15rem;
+    height: 339px;
     left: 31.5%;
-    padding: 0 142px;
+    line-height: 5rem;padding: 0 142px;
     border: solid 4px rgba(255, 255, 255, 0.4);
     color: rgba(255, 255, 255, 0.4);
     font-size: 8rem;
