@@ -32,8 +32,6 @@ $(document).ready(function () {
       var distanceAwayGarage = distance(pos.coords.longitude, pos.coords.latitude, garageLon, garageLat);
       var distanceAwayLiving = distance(pos.coords.longitude, pos.coords.latitude, livingLon, livingLat);
 
-      $('.distanceGarage strong').text(distanceAwayGarage);
-      $('.distanceLiving strong').text(distanceAwayLiving);
       if (distanceAwayGarage > .05) {
         $('.slide-2').addClass('show');
       }

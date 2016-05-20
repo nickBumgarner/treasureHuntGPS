@@ -12,10 +12,6 @@ body {
     text-shadow: 0 10px 0 rgba(0, 0, 0, 0.2); }
   body a {
     text-decoration: none; }
-  body.blue {
-    background-color: #2b90ff; }
-  body.black {
-    background-color: black; }
   body .text-area {
     position: absolute;
     width: 80%;
