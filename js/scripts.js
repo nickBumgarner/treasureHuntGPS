@@ -22,38 +22,45 @@ $(document).ready(function () {
 
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
-
+      //Nicks
       var stop1Lon = -75.492184;
       var stop1Lat = 39.029300;
       var distanceStop1 = distance(pos.coords.longitude, pos.coords.latitude, stop1Lon, stop1Lat);
 
-
-      var stop2Lon = -75.406544;
-      var stop2Lat = 38.889716;
+      //Joshes
+      var stop2Lon = -75.506596;
+      var stop2Lat = 38.889688;
       var distanceStop2 = distance(pos.coords.longitude, pos.coords.latitude, stop2Lon, stop2Lat);
 
-
-      var stop3Lon = -75.406544;
-      var stop3Lat = 38.889716;
+      //Phils
+      var stop3Lon = -75.604419;
+      var stop3Lat = 38.683842;
       var distanceStop3 = distance(pos.coords.longitude, pos.coords.latitude, stop3Lon, stop3Lat);
+      
+      //Royal Farms
+      var stop4Lon = -75.604419;
+      var stop4Lat = 38.683842;
+      var distanceStop4 = distance(pos.coords.longitude, pos.coords.latitude, stop4Lon, stop4Lat);
 
 
-      if (distanceStop1 < .05) {
+      if (distanceStop1 < .5) {
         $('.slide-2').addClass('show');
+      }
+
+      else if (distanceStop2 < .5) {
+        $('.slide-3').addClass('show');
+      }
+
+      else if (distanceStop3 < .5) {
+        $('.slide-4').addClass('show');
+      }
+      else if (distanceStop4 < .5) {
+        $('.slide-5').addClass('show');
       }
       else {
         alert("You must not be there yet, keep trying!");
       }
-     if (distanceStop2 > .05) {
-        $('.slide-3').addClass('show');
-      }
-
-     if (distanceStop3 > .05) {
-        $('.slide-4').addClass('show');
-      }
-
-
-
+console.log("Ran");
 
     });
 
@@ -61,8 +68,8 @@ $(document).ready(function () {
 
   $('.check-button').click(function () {
     whereAreWe();
-
   });
+
 });
 
 // 39.031725, lng:  -75.496371
