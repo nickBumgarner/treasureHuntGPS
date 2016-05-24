@@ -23,40 +23,40 @@ $(document).ready(function () {
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
       //Nicks
-      var stop1Lon = -75.492184;
-      var stop1Lat = 39.029300;
+      var stop1Lon = -75.496377;
+      var stop1Lat = 39.031717;
       var distanceStop1 = distance(pos.coords.longitude, pos.coords.latitude, stop1Lon, stop1Lat);
 
-      //Joshes
-      var stop2Lon = -75.506596;
-      var stop2Lat = 38.889688;
+      //Mom & Dads
+      var stop2Lon = -75.525566;
+      var stop2Lat = 39.021042;
       var distanceStop2 = distance(pos.coords.longitude, pos.coords.latitude, stop2Lon, stop2Lat);
 
-      //Phils
-      var stop3Lon = -75.604419;
-      var stop3Lat = 38.683842;
+      //Shorestop
+      var stop3Lon = -75.558231;
+      var stop3Lat = 39.041486;
       var distanceStop3 = distance(pos.coords.longitude, pos.coords.latitude, stop3Lon, stop3Lat);
 
-      //Royal Farms
-      var stop4Lon = -75.583544;
-      var stop4Lat = 38.805206;
+      //Nicks
+      var stop4Lon = -75.496377;
+      var stop4Lat = 39.031717;
       var distanceStop4 = distance(pos.coords.longitude, pos.coords.latitude, stop4Lon, stop4Lat);
 
 
-      if ((distanceStop1 < .5) && (!$('.slide-2').hasClass('show'))) {
+      if ((distanceStop1 < 1) && (!$('.slide-2').hasClass('show'))) {
         $('.slide-2').addClass('show');
       }
 
-      else if ((distanceStop2 < .5) && (!$('.slide-3').hasClass('show'))) {
+      else if ((distanceStop2 < 1) && (!$('.slide-3').hasClass('show'))) {
 
         $('.slide-3').addClass('show');
       }
 
-      else if ((distanceStop3 < .5) && (!$('.slide-4').hasClass('show'))) {
+      else if ((distanceStop3 < 1) && (!$('.slide-4').hasClass('show'))) {
 
         $('.slide-4').addClass('show');
       }
-      else if (distanceStop4 < .5) {
+      else if (distanceStop4 < 1) {
         $('.slide-5').addClass('show');
       }
       else {
@@ -74,4 +74,3 @@ $(document).ready(function () {
 
 });
 
-// 39.031725, lng:  -75.496371
