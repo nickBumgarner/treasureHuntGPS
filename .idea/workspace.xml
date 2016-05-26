@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98148139-d86b-4e0b-a3f6-8220049d7a93" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/a2b2a16f125b1cf17765047dc9a7ca80a21365f6/_style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/a2b2a16f125b1cf17765047dc9a7ca80a21365f6/_style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css.map" afterPath="$PROJECT_DIR$/css/style.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/scripts.js" afterPath="$PROJECT_DIR$/js/scripts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/scss/_style.scss" afterPath="$PROJECT_DIR$/scss/_style.scss" />
     </list>
     <ignored path="treasurehunt.iws" />
@@ -90,20 +85,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_style.scss" pinned="false" current-in-tab="false">
+      <file leaf-file-name="_style.scss" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/scss/_style.scss">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="403">
-              <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
+            <state relative-caret-position="205">
+              <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="scripts.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/scripts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="227">
+            <state relative-caret-position="347">
               <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
@@ -119,12 +114,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/scss/_style.scss" />
         <option value="$PROJECT_DIR$/slide-2.html" />
         <option value="$PROJECT_DIR$/slide-3.html" />
         <option value="$PROJECT_DIR$/slide-4.html" />
         <option value="$PROJECT_DIR$/slide-5.html" />
         <option value="$PROJECT_DIR$/js/scripts.js" />
+        <option value="$PROJECT_DIR$/scss/_style.scss" />
       </list>
     </option>
   </component>
@@ -261,12 +256,12 @@
       <workItem from="1463778653973" duration="1037000" />
       <workItem from="1464086276054" duration="580000" />
       <workItem from="1464100318257" duration="2738000" />
-      <workItem from="1464259247083" duration="4649000" />
+      <workItem from="1464259247083" duration="4756000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13561000" />
+    <option name="totallyTimeSpent" value="13668000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="23" width="1920" height="1053" extended-state="6" />
@@ -486,14 +481,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/scss/_style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="403">
-          <caret line="153" column="1" selection-start-line="153" selection-start-column="1" selection-end-line="153" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="688">
@@ -536,8 +523,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/js/scripts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="227">
+        <state relative-caret-position="347">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scss/_style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="135" column="16" selection-start-line="135" selection-start-column="16" selection-end-line="135" selection-end-column="16" />
           <folding />
         </state>
       </provider>
