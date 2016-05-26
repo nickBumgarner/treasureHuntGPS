@@ -22,47 +22,38 @@ $(document).ready(function () {
 
     window.navigator.geolocation.getCurrentPosition(function (pos) {
 
-      //Nicks
-      var stop1Lon = -75.496377;
-      var stop1Lat = 39.031717;
+      //Video Scene
+      var stop1Lon = -75.532773;
+      var stop1Lat = 39.126865;
       var distanceStop1 = distance(pos.coords.longitude, pos.coords.latitude, stop1Lon, stop1Lat);
 
-      //Mom & Dads
-      var stop2Lon = -75.525566;
-      var stop2Lat = 39.021042;
+      //Pizzadilis
+      var stop2Lon = 39.025397;
+      var stop2Lat = -75.568716;
       var distanceStop2 = distance(pos.coords.longitude, pos.coords.latitude, stop2Lon, stop2Lat);
 
-      //Shorestop
-      var stop3Lon = -75.558231;
-      var stop3Lat = 39.041486;
+      //Home
+      var stop3Lon = -75.496402;
+      var stop3Lat = 39.031714;
       var distanceStop3 = distance(pos.coords.longitude, pos.coords.latitude, stop3Lon, stop3Lat);
-
-      //Nicks
-      var stop4Lon = -75.496377;
-      var stop4Lat = 39.031717;
-      var distanceStop4 = distance(pos.coords.longitude, pos.coords.latitude, stop4Lon, stop4Lat);
 
 
       if ((distanceStop1 < 1) && (!$('.slide-2').hasClass('show'))) {
         $('.slide-2').addClass('show');
       }
 
-      else if ((distanceStop2 < 1) && (!$('.slide-3').hasClass('show'))) {
+      else if ((distanceStop2 < 1) && (!$('.slide-3').hasClass('show') && ($('.slide-2').hasClass('show')))) {
 
         $('.slide-3').addClass('show');
       }
 
-      else if ((distanceStop3 < 1) && (!$('.slide-4').hasClass('show'))) {
+      else if ((distanceStop3 < 1) && (!$('.slide-4').hasClass('show') && ($('.slide-3').hasClass('show')))) {
 
         $('.slide-4').addClass('show');
-      }
-      else if (distanceStop4 < 1) {
-        $('.slide-5').addClass('show');
       }
       else {
         alert("Try again, you're not there yet!");
       }
-      console.log("Ran");
 
     });
 
@@ -70,6 +61,9 @@ $(document).ready(function () {
 
   $('.check-button').click(function () {
     whereAreWe();
+  });
+  $('.final-button').click(function () {
+    $(".slide-5").addClass('show');
   });
 
 });

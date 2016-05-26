@@ -1,9 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
 body {
-  background-color: #00a3ff;
   color: white;
   font-size: 48px;
-  font-family: 'Open Sans'; }
+  font-family: 'Open Sans';
+  background: url("../images/old_photo.jpg") top left no-repeat transparent;
+  background-size: cover; }
   body h1 {
     font: 800 100px/100px 'Open Sans', sans-serif;
     text-transform: uppercase;
@@ -29,7 +30,7 @@ body {
       position: relative;
       width: 150px;
       height: 15px; }
-  body .check-button {
+  body .check-button, body .final-button {
     border-radius: 999px;
     display: block;
     position: absolute;
@@ -41,14 +42,18 @@ body {
     border: solid 4px rgba(255, 255, 255, 0.4);
     color: rgba(255, 255, 255, 0.4);
     font-size: 10rem; }
-    body .check-button i {
+    body .check-button i, body .final-button i {
       position: absolute;
       top: 23%;
       left: 26.5%; }
-    body .check-button:focus {
+    body .check-button:focus, body .final-button:focus {
       background-color: rgba(255, 255, 255, 0.2); }
+  body .final-button i {
+    top: 21%;
+    left: 31.5%; }
   body .slide-2 {
-    background-color: #005816;
+    background: url("../images/old-photo-2.jpg") top left no-repeat;
+    background-size: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -62,6 +67,8 @@ body {
     body .slide-2.show {
       top: 0; }
   body .slide-3 {
+    background: url("../images/baby-wyatt.jpg") top left no-repeat;
+    background-size: cover;
     background-color: #c6533a;
     width: 100vw;
     height: 100vh;
@@ -76,6 +83,8 @@ body {
     body .slide-3.show {
       top: 0; }
   body .slide-4 {
+    background: url("../images/wedding.jpg") top left no-repeat;
+    background-size: cover;
     background-color: #8400c6;
     width: 100vw;
     height: 100vh;
@@ -89,5 +98,51 @@ body {
     box-shadow: 0 4px 0 rgba(174, 174, 174, 0.3); }
     body .slide-4.show {
       top: 0; }
+  body .slide-5 {
+    background: url("../images/harbor.jpg") top left no-repeat;
+    background-size: cover;
+    background-color: #8400c6;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    transition: all, 0.8s;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-size: 3rem;
+    box-shadow: 0 4px 0 rgba(174, 174, 174, 0.3); }
+    body .slide-5.show {
+      top: 0; }
+    body .slide-5 small {
+      margin-bottom: 10rem;
+      padding: 1rem;
+      background-color: rgba(0, 0, 0, 0.1);
+      display: inline-block; }
+
+.pack, .michaels {
+  text-align: center;
+  margin: 0;
+  text-shadow: 3px 3px 0 black; }
+
+.pack {
+  font-size: 4rem;
+  margin-top: 13rem; }
+
+.michaels {
+  font-size: 7rem;
+  line-height: 5rem;
+  font-weight: bold;
+  display: inline-block; }
+
+a.button {
+  margin: 1rem 0;
+  display: block;
+  background-color: rgba(255, 255, 255, 0.6);
+  border: solid 4px white;
+  border-radius: 20px;
+  padding: 1rem;
+  text-align: center;
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
